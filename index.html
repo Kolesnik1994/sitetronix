@@ -113,19 +113,19 @@ Bootstrap 5 Form Pack Template
                             </li> --> 
 
                             <li>
-                                <a th:href="@{/services}">Сервіси</a>
+                                <a href="services.html">Сервіси</a>
                             </li>
 
                             <li>
-                                <a th:href="@{/portfolio}">Портфоліо</a>
+                                <a href="portfolio.html">Портфоліо</a>
                             </li>
 
                              <li>
-                                <a th:href="@{/#contacts}">Контакти</a>
+                                <a href="#contacts">Контакти</a>
                             </li>
 
                             <li>
-                                <a th:href="@{/about}">Деталі</a>
+                                <a href="about.html">Деталі</a>
                             </li>
                             
                         </ul>
@@ -144,12 +144,12 @@ Bootstrap 5 Form Pack Template
                         </div>
 
                         <div class="modal-body">
-                            <form th:action="@{/}" th:object="${usermessage}" method ="post" id="add-form2" class="custom-form mt-lg-4 mt-2" role="form">
+                            <form action="https://script.google.com/macros/s/AKfycbyge9dyR6OtyfE2lir6f4cI32kX-7QSSRAqEgIILZeR4Z2M3JSQqoPdDheuImIkwpRg/exec" method ="post" id="add-form2" class="custom-form mt-lg-4 mt-2" role="form">
                                 <h2 class="modal-title" id="subscribeModalLabel">Stay with Site Tronix</h2>
 
-                                <input type="email" name="email" field="*{email}"  id="email"  class="form-control" placeholder="почта@email.com" required="">
-                                <input type="text" name="mobile" field="*{mobile}" id="tel"  class="form-control" placeholder="мобільний" required="">
-                                <input type="text" name="name" field="*{name}" id="text"  class="form-control" placeholder="ім'я" required="">
+                                <input type="email" name="Email"   id="email"  class="form-control" placeholder="почта@email.com" required="">
+                                <input type="text" name="Mobile"  id="tel"  class="form-control" placeholder="мобільний" required="">
+                                <input type="text" name="Name" id="text"  class="form-control" placeholder="ім'я" required="">
                                 <!-- pattern="[^ @]*@[^ @]*" -->
 
                                 <button type="submit" class="form-control">Відправити</button>
@@ -359,7 +359,7 @@ Bootstrap 5 Form Pack Template
             </div>
         </div>
         <br>
-         <center> <a th:href="@{/portfolio}" class="primary-btn">Більше Фото Робіт</a> </center>
+         <center> <a href="portfolio.html" class="primary-btn">Більше Фото Робіт</a> </center>
         
          <br style="background: black">
     </section>
