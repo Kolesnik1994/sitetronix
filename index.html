@@ -629,7 +629,38 @@ Bootstrap 5 Form Pack Template
     
 
 <script>
+$(document).ready(function() {
+    $("#add-form").submit(function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        
+        // Show loading spinner
+        $("#loading-spinner").show();
+        $("#overlay").show();
+        
+        $.ajax({
+            type: "POST",
+            url: $(this).attr("action"),
+            data: $(this).serialize(),
 
+            error: function(xhr, status, error) {
+                // Handle the error (if needed)
+                console.error(xhr.responseText);
+            },
+            success: function(response) {
+                // After successful form submission, reset the form
+                $("#add-form")[0].reset();
+                
+            }
+        }).then(function() {
+            // Reload the page after successful AJAX request
+            window.location.reload();
+        }).always(function() {
+            // Hide loading spinner
+            $("#loading-spinner").hide();
+            $("#overlay").hide();
+        });
+    });
+});
     </script> 
     
     
@@ -656,24 +687,24 @@ Bootstrap 5 Form Pack Template
     
     <script > 
     
-    document.getElementById('add-form').addEventListener('submit', function(event) {
+ //   document.getElementById('add-form').addEventListener('submit', function(event) {
         // Prevent the form from submitting
-        event.preventDefault();
+   //     event.preventDefault();
 
         // Get the values of the input fields
-        var email = document.getElementById('name2').value;
-        var mobile = document.getElementById('email2').value;
-        var name = document.getElementById('mobile2').value;
-        var message = document.getElementById('message2').value;
+  //      var email = document.getElementById('name2').value;
+  //      var mobile = document.getElementById('email2').value;
+  //      var name = document.getElementById('mobile2').value;
+  //      var message = document.getElementById('message2').value;
 
         // Construct the alert message
-        var alertMessage = "Email: " + email + "\nMobile: " + mobile + "\nName: " + name + "\nMessage: " + message;
+   //     var alertMessage = "Email: " + email + "\nMobile: " + mobile + "\nName: " + name + "\nMessage: " + message;
 
         // Display the alert message
-        alert(alertMessage);
+  //      alert(alertMessage);
         
-        window.location.href = "index.html";
-    });
+  //      window.location.href = "index.html";
+//    });
     </script>
     
  
