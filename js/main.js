@@ -140,7 +140,7 @@
         dots: false,
         smartSpeed: 1200,
         autoHeight: false,
-        autoplay: true,
+        autoplay: false,
         responsive: {
             992: {
                 items: 5
