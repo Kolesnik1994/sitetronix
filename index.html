@@ -516,7 +516,21 @@ Bootstrap 5 Form Pack Template
         </div>
 
      <!-- Price Section Begin -->
-         
+
+		<!--   єто вместо <div> </div>  <div className="row">
+                 <label htmlFor="category-filter" className="price__label">Категорії</label>
+                  <select 
+                    id="category-filter" 
+                    value={selectedCategory} 
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                  >
+                    <option value="all">All</option>
+                    <option value="photo">Лендінги</option>
+                    <option value="video">Багатосторінкові</option>
+                    <option value="other">Платформи</option>
+                  </select>
+                </div> -->     -->
+          
          <br>
   < <div id="react-root"></div>
 
@@ -566,19 +580,7 @@ Bootstrap 5 Form Pack Template
                   </div>
                 </div>
 
-                <div className="row">
-                  <label htmlFor="category-filter" className="price__label">Категорії</label>
-                  <select 
-                    id="category-filter" 
-                    value={selectedCategory} 
-                    onChange={(e) => setSelectedCategory(e.target.value)}
-                  >
-                    <option value="all">All</option>
-                    <option value="photo">Photo Services</option>
-                    <option value="video">Video Services</option>
-                    <option value="other">Other Services</option>
-                  </select>
-                </div>
+           <div> </div>
 
                 <div className="row">
                   <ul id="price-list">
