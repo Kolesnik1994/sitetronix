@@ -1380,6 +1380,7 @@ ol {
 .logo {
   background: #100028;
   padding: 100px 20px;
+   margin-bottom:-60px;
 }
 
 .logo__carousel.owl-carousel .owl-item img {
