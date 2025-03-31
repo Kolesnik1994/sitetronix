@@ -44,6 +44,150 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+
+
+/* new in CSS */
+
+.services {
+    position: relative; /* Ensures child elements use this as a reference */
+    overflow: hidden; /* Prevents overflow issues */
+  background: #100028;
+  padding-bottom: 60px;
+  padding-top: 110px;
+  background: linear-gradient(black, black, black, indigo);
+  padding-bottom: 60px;
+  padding-top: 110px;
+}
+
+
+
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    pointer-events: none;  
+}
+
+#particles-js2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    pointer-events: none;  
+}
+
+#particles-js3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    pointer-events: none;  
+}
+
+.about {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+.about__pic__item {
+	z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; /* Make it fill the entire container */
+    min-height: 400px; /* Adjust this value as per your requirement */
+    animation: moveBackground 18s linear infinite;
+    
+    /*picture for all screen */
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.about__pic {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Make sure it adjusts well on smaller screens */
+@media (max-width: 768px) {
+    .about__pic__item {
+        height: 60vh; /* Smaller height on mobile */
+    }
+}
+
+
+/* GLow h2 in websit */
+
+h2 {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6), 
+                 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+
+
+@keyframes shine {
+    0% { background-position: -200px; }
+    100% { background-position: 200px; }
+}
+
+.h2 {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    background-size: 200px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 2s infinite linear;
+}
+
+
+.services__item {
+    opacity: 0;
+    transform: translateY(-20px); /* 20px */ 
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.services__item.visible {
+    opacity: 9;
+    transform: translateY(0);
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0 0; } 
+}
+
+.owl-nav{ 
+    display: none;
+}
+
+.owl-dots{ 
+    display: none;
+}
+	
+
+
+
+
 h1,
 h2,
 h3,
