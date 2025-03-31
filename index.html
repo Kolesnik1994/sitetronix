@@ -207,6 +207,9 @@ Bootstrap 5 Form Pack Template
         <!-- Services Section Begin -->
     <section class="services spad">
         <div class="container">
+
+		<div id="particles-js"></div> 
+		
             <div class="row">
                 <div class="col-lg-4">
                     <div class="services__title">
@@ -266,6 +269,106 @@ Bootstrap 5 Form Pack Template
         </div>
     </section>
     <!-- Services Section End -->
+
+
+<!-- about --> 
+
+
+	    <section class="about spad" style="background:linear-gradient(to top, black, black, black, indigo); z-index:-1;">
+	
+
+
+
+     <div class="container">
+     <div id="particles-js3"></div>
+        <div class="row">
+            <!-- Left side: Image -->
+            <div class="col-lg-6">
+                <div class="about__pic">
+                    <div class="about__pic__item about__pic__item--large set-bg" 
+                         data-setbg="img/blog/blog-1.jpg"></div>
+                </div>
+            </div>
+
+            <!-- Right side: Text and Services -->
+            <div class="col-lg-6">
+                <div class="about__text">
+                    <div class="section-title">
+                        <span>ЧОМУ? чому? ЧОмУ?</span>
+                        <h2>Чому саме ми</h2>
+                    </div>
+
+                    <!-- Owl Carousel -->
+                    <div class="">
+                        <!-- First Service Card -->
+                        <div class="services__item">
+                            <h4 class="font-weight-semibold">ПОСТІЙНА ПІДТРИМКА</h4>
+                            <p>Ми забезпечимо постійну підтримку вашого ресурса</p>
+                        </div>
+
+                        <!-- Second Service Card -->
+                        <div class="services__item" style="margin-top:-25px">
+                            <h4 class="font-weight-semibold">СЕРВЕРА</h4>
+                            <p >Розмістимо вебсайт на сервері, разом із базою даних, за які не потрібно платити кожен місяць</p>
+                        </div>
+
+                        <!-- Third Service Card -->
+                        <div class="services__item" style="margin-top:-25px">
+                            <h4 class="font-weight-semibold">БАЗА ДАНИХ</h4>
+                            <p>Ваш вебсайт буде захищений від атак та вторгнень</p>
+                        </div>
+
+                        <!-- Fourth Service Card -->
+                        <div class="services__item" style="margin-top:-25px">
+                            <h4 class="font-weight-semibold">МАШТАБ</h4>
+                            <p>Ми забезпечимо масштабування вашого ресурсу за необхідністю</p>
+                        </div>
+                        
+                    </div>
+                    <!-- End Owl Carousel -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	    <script>  
+document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".services__item");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.7 });
+
+    items.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+</script>
+
+
+<!-- Тисни та Дивись -->
+	    <div class="logo spad" style="padding-top:15px; padding-bottom:40px; background: linear-gradient(to top, black, black);">
+	            <h2 style="text-align:center; color:white;"> ТИСНИ ТА ДИВИСЬ</h2>
+	        </div>
+	    </div>
+    <!-- Тисни та Дивись -->
+
+
+
+
+
+
+
+
+
+	    
     
     <!--  PORTFOLIO -->
     
@@ -356,7 +459,10 @@ Bootstrap 5 Form Pack Template
     
     <!-- Breadcrumb Begin -->
    <!-- Logo Begin -->
-    <div class="logo spad" style="background:black;">
+    <div class="logo spad" style="background: black; position: relative;  overflow: hidden;">
+	    
+	    <div id="particles-js2"></div>
+	    
         <div class="container">
             <div class="logo__carousel owl-carousel">
                 
@@ -789,8 +895,13 @@ Bootstrap 5 Form Pack Template
 <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></scrip
+
+
+<!-- Particles Js -->
     
-    
+<sxript> </script> 
+<script type="text/javascript" src="js/particles.js"> </script>
+<script type="text/javascript" src="js/app.js"> </script>
 
 <script>
 $(document).ready(function() {
