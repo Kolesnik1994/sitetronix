@@ -134,6 +134,65 @@ body {
 }
 
 
+
+/*  new  */
+
+.about__pic__item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 250px;
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about__text {
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .about__pic,
+    .about__text {
+        padding-left: 0;
+    }
+
+    .about__pic__item {
+        min-height: 200px;
+    }
+}
+
+
+
+.callto__services {
+    border-radius: 20px;
+    overflow: hidden; /* Ensures radius applies to children */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.callto__services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3); /* darkness level */
+    z-index: 0; /* behind the content */
+  
+}
+
+
+
+/* Optional: apply filters to the background image itself */
+.callto__services {
+    filter: brightness(80%) contrast(110%);
+}
+
+
 /* GLow h2 in websit */
 
 h2 {
