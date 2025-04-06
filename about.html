@@ -57,11 +57,11 @@
                     <div class="header__nav__option">
                         <nav class="header__nav__menu mobile-menu">
                             <ul>
-                                <li><a th:href="@{/}">Початкова</a></li>
-                                <li ><a th:href="@{/services}">Сервіси</a></li>
-                                <li><a th:href="@{/portfolio}">Портфоліо</a></li>
+                                <li><a href="index.html">Початкова</a></li>
+                                <li ><a href="services.html">Сервіси</a></li>
+                                <li><a href="portfolio.html">Портфоліо</a></li>
                               
-                                <li><a th:href="@{/#contacts}">Контакти</a>                                 
+                                <li><a href="index.html#contacts">Контакти</a>                                 
                                 </li>
                                 
                                  <li class="active"><a style="text-decoration:none" th:href="@{/about}">Детальніше</a></li>
@@ -84,7 +84,7 @@
     <!-- Header End -->
 
     <!-- Breadcrumb Begin -->
-    <div style ="height:70px" class="breadcrumb-option spad set-bg" data-setbg="img/jump.jpg">
+    <div style ="height:70px" class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -100,84 +100,77 @@
     <!-- Breadcrumb End -->
 
     <!-- About Section Begin -->
-   <section class="about spad" style="background:linear-gradient(to top, indigo, black, black, black)"; >
-    <div class="container">
-    <div id="particles-js"> </div>
-        <div class="row">
-            <!-- Images Column -->
-            <div class="col-lg-6">
-                <div class="about__pic row">
-                    <!-- Left Large Image -->
-                    <div class="col-8">
-                        <div class="about__pic__item about__pic__item--large set-bg" data-setbg="img/about/office.jpg" style="border-radius: 10px;"></div>
-                    </div>
-                    <!-- Right Two Small Images (stacked vertically) -->
-                    <div class="col-4 d-flex flex-column gap-3">
-                        <div class="about__pic__item set-bg" data-setbg="img/about/Serv2.jpg.png" style="border-radius: 10px;"></div>
-                        <div class="about__pic__item set-bg" data-setbg="img/about/office1.jpg" style="border-radius: 10px;"></div>
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="about__pic__item about__pic__item--large set-bg"
+                                    data-setbg=" img/about/room2.png"> <img src="">  </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="about__pic__item set-bg" data-setbg="img/about/view.jpg"></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="about__pic__item set-bg" data-setbg="img/about/dev2.jpg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Text Column -->
-            <div class="col-lg-6 ">
-                <div class="about__text">
-                    <div class="section-title">
-                        <span>Про SITE TRONIX</span>
-                        <h2>Хто такі SITE TRONIX?</h2>
-                    </div>
-                
-                    <div class="about__text__desc mt-3">
-                        <p><strong>SITE TRONIX</strong> - готові допомогти своїм клієнтам з втіленням їх бізнес-ідей 
-                        в сучасний інтернет-ресурс, доступний для мільйонів користувачів інтернету. 
-                        Все, що залишається для остаточної реалізації ваших планів — це подати заявку або зателефонувати нам.
-                        - готові допомогти своїм клієнтам з втіленням їх бізнес-ідей 
-                        в сучасний інтернет-ресурс, доступний для мільйонів користувачів інтернету. 
-                        Все, що залишається для остаточної реалізації ваших планів — це подати заявку або зателефонувати нам.</p>
-                    </div>
-                    
-                    <div class="col-lg-8"> 
-                  <div class="row " >
-                        <div class="col-md-6">
-                           <div class="services__item"> 
-                                <div class="services__item__icon" >
-                                    <img src="img/icons/si-4.png" alt="">
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <span>Про SITE TRONIX</span>
+                            <h2>Хто такі SITE TRONIX?</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <div class="services__item__icon">
+                                        <img src="img/icons/si-4.png" alt="">
+                                    </div>
+                                    <h4>СТВОРЕННЯ</h4>
+                                    <p style="font-style:italic;">Створюємо сайти для браузерів з нуля, під ключ.</p>
                                 </div>
-                                <h4 style="color:white; margin-top:25px;">Креативність</h4>
-                                <p style="font-style:italic; margin-top:7px;">Створюємо сайти для браузерів з нуля, під ключ.</p>
                             </div>
-                      </div>
-                        <div class="col-md-6">
-                         <div class="services__item"> 
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-3.png" alt="" >
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <div class="services__item__icon">
+                                        <img src="img/icons/si-3.png" alt="">
+                                    </div>
+                                    <h4>РЕДАГУВАННЯ</h4>
+                                    <p style="font-style:italic;" >  Редагуємо, доповнюємо вже наявні сайти.</p>
                                 </div>
-                                <h4 style="color:white; margin-top:25px; ">Сучастність</h4>
-                                <p style="font-style:italic;">Редагуємо, доповнюємо вже наявні сайти.</p>
-                            </div> 
-                    </div>   </div>
+                            </div>
+                        </div>
+                        <div class="about__text__desc">
+                            <p style="font-style:bold;">SITE TRONIX - готові допомогти своїм клієнтам з втіленням їх бізнес-ідей в сучасний інтернет-ресурс
+                            доступний для мільйонів користувачів інтернету. Все, що залишається для остаточної реалізації ваших планів, так це - подати заявку або зателефонувати нам. </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
- 
-</section>
-
+    </section>
     <!-- About Section End -->
     
     
- <script type="text/javascript" src="js/particles.js"> </script>
-      <script type="text/javascript" src="js/app.js"> </script>
-      
+ 
     
     <!-- Footer Section Begin -->
-    <footer class="footer" style="background:linear-gradient(to top, black, black, black, indigo)">
+    <footer class="footer">
         <div class="container">
             <div class="footer__top">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__top__logo">
-                            <a  style="color:white" th:href="@{/}"> SITE TRONIX DEVELOPER GROUP </a>
+                            <a style="color:white" href="index.html"> SITE TRONIX DEVELOPER GROUP </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -218,10 +211,10 @@
                         <div class="footer__option__item">
                             <h5>Others</h5>
                             <ul>
-                                <li><a href="#">Сервіси</a></li>
-                                <li><a href="#">Контакти</a></li>
-                                <li><a href="#">Про компанію</a></li>
-                                <li><a href="#">Головна сторінка</a></li>
+                                <li><a href="services.html">Сервіси</a></li>
+                                <li><a href="index.html#contacts">Контакти</a></li>
+                                <li><a href="about.html">Про компанію</a></li>
+                                <li><a href="index.html">Головна сторінка</a></li>
                             </ul>
                         </div>
                     </div>
@@ -267,16 +260,9 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
-
-
-
-
-
-
 
 
 
