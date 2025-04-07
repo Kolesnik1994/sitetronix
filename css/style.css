@@ -173,7 +173,7 @@ body {
   
 }
 
-/*.callto__services::before {
+.callto__services::before {
     content: "";
     position: absolute;
     top: 0;
