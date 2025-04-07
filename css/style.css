@@ -173,24 +173,21 @@ body {
   
 }
 
-.callto__services::before {
+/*.callto__services::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3); /* darkness level */
-    z-index: 0; /* behind the content */
+    background: rgba(0, 0, 0, 0.3);  darkness level 
+    z-index: 0;  behind the content 
   
 }
 
-
-
-/* Optional: apply filters to the background image itself */
 .callto__services {
     filter: brightness(80%) contrast(110%);
-}
+} */
 
 
 /* GLow h2 in websit */
