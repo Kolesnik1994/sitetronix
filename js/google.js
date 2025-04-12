@@ -3,7 +3,7 @@
  */
 
  
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyge9dyR6OtyfE2lir6f4cI32kX-7QSSRAqEgIILZeR4Z2M3JSQqoPdDheuImIkwpRg/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyZ-2e9xVe7wJ4cvpa3DOyDE63avthH2gYCsM--XuFGUGAhUPB8ZcHzv9MQIoy6TBoE/exec'
 
 /**const form = document.forms['contact-form']
 
